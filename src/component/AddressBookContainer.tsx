@@ -21,13 +21,13 @@ const AddressBookContainer = () => {
     )
   }
 
-  return <Layout>
+  return <>
     <SearchInput query={searchQuery} onSearch={setSearchQuery} />
 
     <AddForm onAdd={onAdd} />
 
     <BookTable books={filteredList} onEdit={onEdit} />
-  </Layout>
+  </>
 }
 
 export default AddressBookContainer
